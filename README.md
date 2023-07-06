@@ -1,10 +1,10 @@
 # Apziva Program Projects
-
+---
 This repository contains the project work for my AI Residency Program. Throughout the program, I have worked on various projects to explore and develop my skills in artificial intelligence and machine learning.
 
-## Projects
-**Project 1:** *Happy Customers*
-
+# Projects
+## **Project 1:** *Happy Customers*
+---
 - Description: Presented with a subset of customer feedback data, predict if a customer is happy or not based on the answers they give to questions asked.
 - Technologies used: 
     - Jupyter notebook 
@@ -19,8 +19,8 @@ This repository contains the project work for my AI Residency Program. Throughou
     - It was found that the **X2** feature had a negative feature importance ('*Feature Selection*' [15]), and thus **X2** could be safely removed in the next survey.
     - Generally, the default parameters were sufficient for achieving the requested accuracy score, and further attempts at Hyperparameter Tuning via Grid Search and Bayesian Optimization proved ineffective.
 
-**Project 2:** *Term Deposit Marketing*
-
+## **Project 2:** *Term Deposit Marketing*
+---
 - Description: Presented with customer data, predict if a customer will subscribe to a term deposit. Further, find the customers most likely to buy the investment product, and which segment should be prioritized by sales.
 - Concepts used: 
     - Class Imbalance 
@@ -62,3 +62,9 @@ And 2 Bonus Goals:
 
 1. **Determine the segment(s) of customers our client should prioritize.**
 2. **What makes the customers buy?** For this, we used Feature Importance to determine the most important feature in whether or not a customer buys. As found in the 'Feature Importance' section, we find that the 'day' value is the most important feature, and the highest positive result rate occurs on the first and last days of the month. Therefore, it is important to focus on those days of the month for selling to customers.
+
+## **Project 3:** *Potential Talents*
+---
+- Description: Predict how fit the candidate is based on their available information.
+
+- In Progress
