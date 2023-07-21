@@ -32,8 +32,8 @@ This repository contains the project work for my AI Residency Program. Throughou
 - Results: 
 We have applied the following preprocessing steps:
 
-- Upsampling. This is to account for the class imbalance.
-- Class Weights. This is also to account for the class imbalance.
+    - Upsampling. This is to account for the class imbalance.
+    - Class Weights. This is also to account for the class imbalance.
 
 Both steps have been shown to improve the tracked metrics. Additional, Probability Prediction was used to enhance the effectiveness in the models. Comparing three models, the average performance score was calculated and shown below:
 
@@ -65,6 +65,17 @@ And 2 Bonus Goals:
 
 ## **Project 3:** *Potential Talents*
 ---
-- Description: Predict how fit the candidate is based on their available information.
+- Description: Given candidates and their job titles, use Natural Language Processing techniques to rank candidates based on their job titles. Then, given manual rankings, train and evaluate a model that predicts how fit a given candidate is for a role.
+- Concepts used: 
+    - **Natural Language Processing (NLP):** This project heavily involves NLP techniques, specifically for generating embeddings from textual data in resumes. Techniques used include Doc2Vec, BERT, GloVe, and ELMo.
+    - **Learning to Rank (LTR):** LTR is a branch of machine learning that focuses on training models for ranking items in a list or a group. Three specific LTR models, RankNet, LambdaRank, and LambdaMART are trained and compared.
+    - **Model Evaluation:** The models are evaluated using the Normalized Discounted Cumulative Gain (NDCG) metric, a popular choice for measuring the effectiveness of ranking models.
+    - **Data Visualization:** Data visualization is used to aid in understanding the model performances, particularly through plotting the NDCG scores of the models over different iterations.
+- Results: 
 
-- In Progress
+Leveraging multiple text embedding techniques, cosine similarity measures were generated as fitness scores to establish a preliminary ranking of job candidates. Subsequently, a manual 'starring' process was undertaken to mimic the real-world evaluation of these candidates. This created a binary outcome, used as the target for training a series of Learning-to-Rank (LTR) models.
+
+These LTR models, specifically RankNet, LambdaRank, and LambdaMART, were then deployed to re-rank the candidates based on their predicted 'starred' status. Each model was evaluated and compared using the Normalized Discounted Cumulative Gain (NDCG) metric to ascertain the most effective approach.
+
+Furthermore, this project addressed practical considerations regarding the determination of threshold values for deeming candidates unfit, in both specific and general terms. It also discussed potential automation techniques that could be employed in future iterations to enhance efficiency while maintaining measures to prevent human bias. This project thereby offers an insightful perspective into the utility of machine learning and natural language processing in the context of an automated hiring process.
+
