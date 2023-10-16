@@ -57,11 +57,15 @@ In summary, while both the CNN and Vision Transformer models achieved satisfacto
 
 Given candidates and their job titles, use Natural Language Processing techniques to rank candidates based on their job titles. Then, given manual rankings, train and evaluate a model that predicts how fit a given candidate is for a role.
 
-**Concepts used:**
-    - **Natural Language Processing (NLP):** This project heavily involves NLP techniques, specifically for generating embeddings from textual data in resumes. Techniques used include Doc2Vec, BERT, GloVe, and ELMo.
-    - **Learning to Rank (LTR):** LTR is a branch of machine learning that focuses on training models for ranking items in a list or a group. Three specific LTR models, RankNet, LambdaRank, and LambdaMART are trained and compared.
-    - **Model Evaluation:** The models are evaluated using the Normalized Discounted Cumulative Gain (NDCG) metric, a popular choice for measuring the effectiveness of ranking models.
-    - **Data Visualization:** Data visualization is used to aid in understanding the model performances, particularly through plotting the NDCG scores of the models over different iterations.
+**Concepts used**
+- **Natural Language Processing (NLP):** This project heavily involves NLP techniques, specifically for generating embeddings from textual data in resumes. Techniques used include Doc2Vec, BERT, GloVe, and ELMo.
+    
+- **Learning to Rank (LTR):** LTR is a branch of machine learning that focuses on training models for ranking items in a list or a group. Three specific LTR models, RankNet, LambdaRank, and LambdaMART are trained and compared.
+    
+- **Model Evaluation:** The models are evaluated using the Normalized Discounted Cumulative Gain (NDCG) metric, a popular choice for measuring the effectiveness of ranking models.
+    
+- **Data Visualization:** Data visualization is used to aid in understanding the model performances, particularly through plotting the NDCG scores of the models over different iterations.
+    
 
 **Results:**
 
